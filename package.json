@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Chenglu Matsuyama",
+  "author": "Chenglu Li",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",

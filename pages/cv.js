@@ -1,8 +1,7 @@
-import { useState } from 'react'
 import { Viewer, Worker } from '@react-pdf-viewer/core'
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout'
 
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 
 
