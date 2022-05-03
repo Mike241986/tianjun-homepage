@@ -1,112 +1,116 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider, Badge } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import thumbCyber from '../public/images/works/cyberinfrastructure_eyecatch.jpg'
+import thumbTelelab from '../public/images/works/telelab_eyecatch.png'
+import thumbIE from '../public/images/works/ie_eyecatch.png'
+import thumbAR from '../public/images/works/ar_eyecatch.jpg'
+import thumbMFlow from '../public/images/works/mflow_eyecatch.jpg'
+import thumbFlamingo from '../public/images/works/flamingo_eyecatch.png'
+import thumbART from '../public/images/works/artmath_eyecatch.png'
+import thumbSPAC3 from '../public/images/works/spac3_eyecatch.jpg'
 
 const Works = () => (
-  <Layout title="Works">
-    <Container>
+  <Layout title="Projects">
+    <Container maxW="container.lg">
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem
+            id="cyberinfrastructure"
+            title="CyberInfrastructure for FAccT AI"
+            thumbnail={thumbCyber}
+          >
+            Shared Models & Codebase for adopting FAccT AI.
+            <Badge ml='1' colorScheme='green' fontSize='0.6em'>
+              IES #R305C160004, UF AI Catalyst Award, UF AI SEED grant
+            </Badge>
           </WorkGridItem>
         </Section>
+
+        <Section>
+          <WorkGridItem id="telelab" title="Telelab" thumbnail={thumbTelelab}>
+            Remote Lab 2.0 for STEM education
+            <Badge ml='1' colorScheme='green' fontSize='0.6em'>
+              NSF #2054079 & #2131097
+            </Badge>
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="spac3"
+            thumbnail={thumbSPAC3}
+            title="SPAC3"
+          >
+            Cuturally relevant spatial computational thinking with MineCraft Mod
+            <Badge ml='1' colorScheme='green' fontSize='0.6em'>
+              NSF
+            </Badge>
+          </WorkGridItem>
+        </Section>
+
         <Section>
           <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
+            id="alienrescue"
+            title="Alien Rescue"
+            thumbnail={thumbAR}
+            delay={0.1}
           >
-            Music recommendation app for iOS
+            Game-based learning for middle-school students' science learning.
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <WorkGridItem id="mflow" thumbnail={thumbMFlow} title="M-Flow">
+            Flow-based computing platform with music
+            <Badge ml='1' colorScheme='green' fontSize='0.6em'>
+              NSF
+            </Badge>
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
+            id="infraredexplorer"
+            title="Infared Explorer"
+            thumbnail={thumbIE}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            Scientific Imaging for Science Education
+            <Badge ml='1' colorScheme='green' fontSize='0.6em'>
+              NSF #2054079
+            </Badge>
           </WorkGridItem>
         </Section>
+
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.2}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.3}>
           <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
+            id="flamingorecommender"
+            thumbnail={thumbFlamingo}
+            title="Flamingo Recommendation System"
           >
-            The mode magazine for understanding to personally enjoy Japan
+            Course2Course and WithinCourse recommendation system for professional development
+            <Badge ml='1' colorScheme='green' fontSize='0.6em'>
+              Helios Foundation
+            </Badge>
           </WorkGridItem>
         </Section>
-        <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
 
-      <Section delay={0.4}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old works
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
+        <Section delay={0.1}>
           <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
+            id="artmath"
+            thumbnail={thumbART}
+            title="ART-Math"
           >
-            Automatic audio file tagging tool using FreeDB for Windows
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
+            Mathematical thinking through free-form drawing & story-telling
+            <Badge ml='1' colorScheme='green' fontSize='0.6em'>
+              Schmidt Future Foundation
+            </Badge>
           </WorkGridItem>
         </Section>
       </SimpleGrid>

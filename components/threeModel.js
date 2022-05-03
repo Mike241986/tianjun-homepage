@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
-import { DogSpinner, DogContainer } from './voxel-dog-loader'
+import { ModelContainer, ModelSpinner } from './threeModelLoader'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -13,7 +13,7 @@ const VoxelDog = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
+  const [target] = useState(new THREE.Vector3(0, 0.4, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
       20 * Math.sin(0.2 * Math.PI),
@@ -53,7 +53,7 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 4.8
+      const scale = scH * 0.0005 + 1.3
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -66,15 +66,15 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
-      scene.add(ambientLight)
+      const hemisphereLight = new THREE.HemisphereLight(0xcccccc, 0x080820, 2)
+      scene.add(hemisphereLight)
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/dog.glb', {
+      loadGLTFModel(scene, '/static/scene.gltf', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
@@ -122,7 +122,9 @@ const VoxelDog = () => {
   }, [renderer, handleWindowResize])
 
   return (
-    <DogContainer ref={refContainer}>{loading && <DogSpinner />}</DogContainer>
+    <ModelContainer ref={refContainer}>
+      {loading && <ModelSpinner />}
+    </ModelContainer>
   )
 }
 

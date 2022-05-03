@@ -25,12 +25,17 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`}>
       <LinkBox cursor="pointer">
-        <Image
-          src={thumbnail}
-          alt={title}
-          className="grid-item-thumbnail"
-          placeholder="blur"
-        />
+        <div style={{ height: 260, position: 'relative' }}>
+          <Image
+            src={thumbnail}
+            alt={title}
+            className="grid-item-thumbnail"
+            placeholder="blur"
+            objectFit='cover'
+            layout="fill"
+            height={'100%'}
+          />
+        </div>
         <LinkOverlay href={`/works/${id}`}>
           <Text mt={2} fontSize={20}>
             {title}
@@ -47,6 +52,7 @@ export const GridItemStyle = () => (
     styles={`
       .grid-item-thumbnail {
         border-radius: 12px;
+        position: relative !important;
       }
     `}
   />

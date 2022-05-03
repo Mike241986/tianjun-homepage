@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Text, useColorModeValue } from '@chakra-ui/react'
+import { Text, useColorModeValue, Icon } from '@chakra-ui/react'
 import styled from '@emotion/styled'
+import { FaRobot } from 'react-icons/fa'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -12,30 +13,35 @@ const LogoBox = styled.span`
   line-height: 20px;
   padding: 10px;
 
-  img {
+  svg {
     transition: 200ms ease;
   }
 
-  &:hover img {
+  &:hover svg {
     transform: rotate(20deg);
   }
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
-
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={footPrintImg} width={20} height={20} alt="logo" />
+          <Icon
+            as={FaRobot}
+            alt="logo"
+            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+            style={{ width: '20px', height: '20px' }}
+            mr={1}
+            mb={0.5}
+          />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
             ml={3}
           >
-            Takuya Matsuyama
+            Chenglu Li
           </Text>
         </LogoBox>
       </a>
