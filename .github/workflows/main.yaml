@@ -1,20 +1,16 @@
 name: Deploy to GitHub Pages
 
-
 on:
   push:
     branches: [main]
-
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-
     strategy:
       matrix:
         node-version: [14.x]
-
 
     steps:
       - name: Get files
@@ -26,7 +22,7 @@ jobs:
       - name: Use the latest npm
         run: npm i -g npm@latest
       - name: Install packages
-        run: npm ci
+        run: npm i
       - name: Build project
         run: npm run build
       - name: Export static files

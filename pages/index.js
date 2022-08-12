@@ -92,7 +92,7 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2020 to present</BioYear>
+          <BioYear>2020-2023 (expected to graduate in May)</BioYear>
           Ph.D.C. in Educational Technology at University of Florida
         </BioSection>
         <BioSection>

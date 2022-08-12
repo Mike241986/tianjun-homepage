@@ -23,10 +23,10 @@ const Works = () => (
         <Section>
           <WorkGridItem
             id="cyberinfrastructure"
-            title="CyberInfrastructure for FAccT AI"
+            title="FAccT AI in Education"
             thumbnail={thumbCyber}
           >
-            Shared Models & Codebase for adopting FAccT AI.
+            Investigations, Shared Models, & Code-base for adopting FAccT AI.
             <Badge ml='1' colorScheme='green' fontSize='0.6em'>
               IES #R305C160004, UF AI Catalyst Award, UF AI SEED grant
             </Badge>
@@ -38,19 +38,6 @@ const Works = () => (
             Remote Lab 2.0 for STEM education
             <Badge ml='1' colorScheme='green' fontSize='0.6em'>
               NSF #2054079 & #2131097
-            </Badge>
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="spac3"
-            thumbnail={thumbSPAC3}
-            title="SPAC3"
-          >
-            Cuturally relevant spatial computational thinking with MineCraft Mod
-            <Badge ml='1' colorScheme='green' fontSize='0.6em'>
-              NSF
             </Badge>
           </WorkGridItem>
         </Section>
@@ -70,7 +57,7 @@ const Works = () => (
           <WorkGridItem id="mflow" thumbnail={thumbMFlow} title="M-Flow">
             Flow-based computing platform with music
             <Badge ml='1' colorScheme='green' fontSize='0.6em'>
-              NSF
+              NSF #1657366 (sub-award)
             </Badge>
           </WorkGridItem>
         </Section>
@@ -88,6 +75,19 @@ const Works = () => (
           </WorkGridItem>
         </Section>
 
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="spac3"
+            thumbnail={thumbSPAC3}
+            title="SPAC3"
+          >
+            Cuturally relevant spatial computational thinking with MineCraft Mod
+            <Badge ml='1' colorScheme='green' fontSize='0.6em'>
+              NSF #2148733
+            </Badge>
+          </WorkGridItem>
+        </Section>
+        
         <Section delay={0.1}>
           <WorkGridItem
             id="flamingorecommender"

@@ -10,7 +10,7 @@ const CV = () => {
   return (
     <Layout title="Curriculum Vitae">
       <Container maxW="container.lg" m={4}>
-        <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.12.313/build/pdf.worker.js">
+        <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.9.359/legacy/build/pdf.worker.js">
           <div style={{ height: '900px' }}>
             <Viewer
               fileUrl="/Chenglu_CV.pdf"
