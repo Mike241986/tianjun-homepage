@@ -33,10 +33,10 @@ const RefBox = ({ children }) => {
 }
 
 const Work = () => (
-  <Layout title="cyberinfrastructure">
+  <Layout title="FAccT AI in Education">
     <Container maxW="container.lg">
       <Title>
-        FAccT AI CyberInfrastructure <Badge>2020-Current</Badge>
+        FAccT AI in Education <Badge>2020-Current</Badge>
       </Title>
       <P>
         Shared Models & Codebase for adopting FAccT AI. For example, researchers
@@ -70,14 +70,20 @@ const Work = () => (
             w={{ md: '60%', sm: '100%' }}
           />
           <RefBox>
-            Li, C., Xing, W., & Leite, W. (2021). Yet Another Predictive Model?
-            Fair Predictions of Students’ Learning Outcomes in an Online Math
-            Learning Platform. In{' '}
+            <strong>Li, C.</strong>, Xing, W., & Leite, W. (2021). Yet Another
+            Predictive Model? Fair Predictions of Students’ Learning Outcomes in
+            an Online Math Learning Platform. In{' '}
             <i>
               LAK21: 11th International Learning Analytics and Knowledge
               Conference
             </i>{' '}
             (pp. 572-578). https://doi.org/10.1145/3448139.3448200
+          </RefBox>
+          <RefBox>
+            <strong>Li, C.</strong>, Xing, W., & Leite, W. (2022, accepted).
+            Using Fair AI to Predict Students’ Math Learning Outcomes in an
+            Online Platform.
+            <i>Interactive Learning Environments</i>
           </RefBox>
         </ListItem>
         <ListItem>
@@ -96,9 +102,9 @@ const Work = () => (
             w={{ md: '60%', sm: '100%' }}
           />
           <RefBox>
-            Li, C., Xing, W., & Leite, W. L. (2022). Toward building a fair peer
-            recommender to support help-seeking in online learning.{' '}
-            <i>Distance Education, 43</i>(1), 30-55.
+            <strong>Li, C.</strong>, Xing, W., & Leite, W. L. (2022). Toward
+            building a fair peer recommender to support help-seeking in online
+            learning. <i>Distance Education, 43</i>(1), 30-55.
             https://doi.org/10.1080/01587919.2021.2020619
           </RefBox>
         </ListItem>
@@ -120,11 +126,27 @@ const Work = () => (
             w={{ md: '60%', sm: '100%' }}
           />
           <RefBox>
-            Li, C., Xing, W., & Leite, W. L. (2022). Building socially
-            responsible conversational agents using big data to support online
-            learning: A case with algebra nation.{' '}
+            <strong>Li, C.</strong>, Xing, W., & Leite, W. L. (2022). Building
+            socially responsible conversational agents using big data to support
+            online learning: A case with algebra nation.{' '}
             <i>British Journal of Educational Technology</i>.
             https://doi.org/10.1111/bjet.13227
+          </RefBox>
+        </ListItem>
+        <ListItem>
+          Other relevant publications:
+          <RefBox>
+            <strong>Li, C.</strong>, & Xing, W. (2022). Revealing factors
+            influencing students' perceived fairness: A case with a predictive
+            system for math learning. In{' '}
+            <i>Proceedings of the Ninth ACM Conference on Learning@ Scale</i>{' '}
+            (pp. 409-412).
+          </RefBox>
+          <RefBox>
+            Xing, W., <strong>Li, C.</strong>, & Leite, W. (2022). AlgebraNation
+            Dataset: Educational Big Data to Support Fair Educational Machine
+            Learning. In{' '}
+            <i>Proceedings of Educational Data Mining 2022 FATED Workshop</i>.
           </RefBox>
         </ListItem>
       </UnorderedList>

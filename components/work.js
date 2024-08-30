@@ -1,5 +1,13 @@
 import NextLink from 'next/link'
-import { Heading, Box, Image, Link, Badge, useColorModeValue, Flex } from '@chakra-ui/react'
+import {
+  Heading,
+  Box,
+  Image,
+  Link,
+  Badge,
+  useColorModeValue,
+  Flex
+} from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export const Title = ({ children }) => (
@@ -18,7 +26,14 @@ export const Title = ({ children }) => (
 )
 
 export const WorkImage = ({ src, alt, ...rest }) => (
-  <Flex justifyContent='center' bgColor={useColorModeValue('whiteAlpha.500', 'whiteAlpha.500')} mt={4} p={2}>
+  <Flex
+    justifyContent="center"
+    bgColor={useColorModeValue('rgba(255,255,255,.3)', 'rgba(0,0,0,.8)')}
+    background={'radial-gradient(#959B9F, #2A2B2F)'}
+    mt={4}
+    p={2}
+    py={4}
+  >
     <Image borderRadius="lg" w="full" src={src} alt={alt} {...rest} />
   </Flex>
 )
