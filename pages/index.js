@@ -95,8 +95,8 @@ const Home = () => (
         <BioSection>
           <BioYear>2020-2023 (expected to graduate in May)</BioYear>
           Ph.D.C. in Educational Technology at University of Florida
-        {/* </BioSection>
-        <BioSection>
+        </BioSection>
+        {/* <BioSection>
           <BioYear>2015-2020</BioYear>
           Completed the Master's program in Learning Technologies (LT) from
           University of Texas at Austin and worked on a Ph.D. degree in LT
