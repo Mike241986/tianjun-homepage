@@ -66,7 +66,7 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const hemisphereLight = new THREE.HemisphereLight(0xcccccc, 0x080820, 2)
+      const hemisphereLight = new THREE.HemisphereLight(0xcccccc, 0x080820, 1)
       scene.add(hemisphereLight)
 
       const controls = new OrbitControls(camera, renderer.domElement)
