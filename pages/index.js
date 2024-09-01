@@ -31,17 +31,16 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a Ph.D. candidate in EdTech @ University of Florida!
+        Hello, I&apos;m an undergraduate student @ University of Florida!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Chenglu Li
+            Tianjun Wang
           </Heading>
           <p>
-            Educational Researcher Specialized in Fair AI ( Husband / Developer
-            / Bayesian )
+            Fourth-year undergraduate student in Aerospace and ELectrical Engineering
           </p>
         </Box>
         <Box
@@ -57,7 +56,7 @@ const Home = () => (
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/profile.jpg"
+            src="/images/tianjun.jpg"
             alt="Profile image"
           />
         </Box>
@@ -68,6 +67,8 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
+          Tianjun is a fourth-year undergraduate student 
+
           Chenglu is a Ph.D. candidate who is actively looking for a job in
           academia in learning analytics, artificial intelligence in education,
           and educational data mining. He has published a number of papers as
@@ -94,20 +95,20 @@ const Home = () => (
         <BioSection>
           <BioYear>2020-2023 (expected to graduate in May)</BioYear>
           Ph.D.C. in Educational Technology at University of Florida
-        </BioSection>
+        {/* </BioSection>
         <BioSection>
           <BioYear>2015-2020</BioYear>
           Completed the Master's program in Learning Technologies (LT) from
           University of Texas at Austin and worked on a Ph.D. degree in LT
-        </BioSection>
+        </BioSection> */}
         <BioSection>
           <BioYear>2011-2015</BioYear>
           Graduated from University of International Business and Economics
           (Beijing, China) with a BA in Business Vietnamese and Finance
         </BioSection>
         <BioSection>
-          <BioYear>1992</BioYear>
-          Born in Guilin, China.
+          <BioYear>2002</BioYear>
+          Born in JiangSu, China.
         </BioSection>
       </Section>
 
