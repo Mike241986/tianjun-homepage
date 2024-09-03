@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Text, useColorModeValue, Icon } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import { FaRobot } from 'react-icons/fa'
-import { FaMicrochip } from "react-icons/fa6";
+import { SiCircuitverse } from "react-icons/si";
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -29,7 +29,7 @@ const Logo = () => {
       <a>
         <LogoBox>
           <Icon
-            as={FaMicrochip}
+            as={SiCircuitverse}
             alt="logo"
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             style={{ width: '20px', height: '20px' }}
