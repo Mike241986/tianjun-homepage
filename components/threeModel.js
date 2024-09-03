@@ -66,7 +66,7 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const hemisphereLight = new THREE.HemisphereLight(0xcccccc, 0x080820, 1)
+      const hemisphereLight = new THREE.HemisphereLight(0xcccccc, 0x080820, 2)
       scene.add(hemisphereLight)
 
       const controls = new OrbitControls(camera, renderer.domElement)
@@ -93,7 +93,7 @@ const VoxelDog = () => {
           const p = initialCameraPosition
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
 
-          camera.position.y = 10
+          camera.position.y = 0
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
           camera.position.z =

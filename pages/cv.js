@@ -13,7 +13,7 @@ const CV = () => {
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.9.359/legacy/build/pdf.worker.js">
           <div style={{ height: '900px' }}>
             <Viewer
-              fileUrl="/Chenglu_CV.pdf"
+              fileUrl="/tianjun_CV.pdf"
               plugins={[defaultLayoutPluginInstance]}
             />
           </div>

@@ -19,6 +19,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoGithub } from 'react-icons/io5'
 import { FaResearchgate } from 'react-icons/fa'
+import { FaLinkedin } from "react-icons/fa";
 import { SiGooglescholar } from 'react-icons/si'
 
 const Home = () => (
@@ -40,7 +41,7 @@ const Home = () => (
             Tianjun Wang
           </Heading>
           <p>
-            Fourth-year undergraduate student in Aerospace and ELectrical Engineering
+            Fourth-year undergraduate student in Aerospace and Electrical Engineering
           </p>
         </Box>
         <Box
@@ -67,8 +68,8 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Tianjun is a fourth-year undergraduate student 
-
+          Tianjun is a fourth-year undergraduate student that is actively involved in 3 research labs. He is currently working on creating portable NMR devices and using NQR devices as a method to improve food security. He is planning on pursuing a Ph.D. in Electrical Engineering in NMR/NQR devices. 
+{/* 
           Chenglu is a Ph.D. candidate who is actively looking for a job in
           academia in learning analytics, artificial intelligence in education,
           and educational data mining. He has published a number of papers as
@@ -77,7 +78,7 @@ const Home = () => (
           Transactions in Learning Technology, Interactive Learning Environments, Distance Education, and Journal
           of Educational Computing Research. Chenglu is also a full-stack
           developer and has led several successful educational & commercial
-          applications.
+          applications. */}
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
@@ -93,8 +94,8 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2020-2023 (expected to graduate in May)</BioYear>
-          Ph.D.C. in Educational Technology at University of Florida
+          <BioYear>2021-2027 (expected to graduate in May)</BioYear>
+          Bachelor of Science in Aerospace Engineering and Bachelor of Science in Electrical Engineering, University of Florida
         </BioSection>
         {/* <BioSection>
           <BioYear>2015-2020</BioYear>
@@ -102,9 +103,8 @@ const Home = () => (
           University of Texas at Austin and worked on a Ph.D. degree in LT
         </BioSection> */}
         <BioSection>
-          <BioYear>2011-2015</BioYear>
-          Graduated from University of International Business and Economics
-          (Beijing, China) with a BA in Business Vietnamese and Finance
+          <BioYear>2017-2021</BioYear>
+          Graduated from MICS
         </BioSection>
         <BioSection>
           <BioYear>2002</BioYear>
@@ -135,7 +135,7 @@ const Home = () => (
           On the web
         </Heading>
         <List>
-          <ListItem>
+          {/* <ListItem>
             <Link
               href="https://scholar.google.com/citations?user=TlMZsYQAAAAJ&hl=en"
               target="_blank"
@@ -148,8 +148,8 @@ const Home = () => (
                 @Chenglu Li
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </ListItem> */}
+          {/* <ListItem>
             <Link
               href="https://www.researchgate.net/profile/Chenglu-Li-2"
               target="_blank"
@@ -162,15 +162,26 @@ const Home = () => (
                 @Chenglu Li
               </Button>
             </Link>
+          </ListItem> */}
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/tianjun-wang" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={FaLinkedin} />}
+              >
+                @Tianjun Wang
+              </Button>
+            </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://github.com/lichenglu" target="_blank">
+            <Link href="https://github.com/Mike241986" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @lichenglu
+                @Mike241986
               </Button>
             </Link>
           </ListItem>
