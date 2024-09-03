@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Text, useColorModeValue, Icon } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import { FaRobot } from 'react-icons/fa'
+import { FaRocket } from "react-icons/fa";
 import { SiCircuitverse } from "react-icons/si";
 
 const LogoBox = styled.span`
@@ -29,7 +29,7 @@ const Logo = () => {
       <a>
         <LogoBox>
           <Icon
-            as={SiCircuitverse}
+            as={FaRocket}
             alt="logo"
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             style={{ width: '20px', height: '20px' }}

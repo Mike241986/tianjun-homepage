@@ -53,7 +53,7 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.0005 + 1.3
+      const scale = scH * 0.0005 + 1.3 - 0.5  //decrease field of view for camera
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -78,6 +78,8 @@ const VoxelDog = () => {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
+        // Adjust the position of the model
+        model.position.y += 0.2; // Increase this value to raise the model higher
         animate()
         setLoading(false)
       })
