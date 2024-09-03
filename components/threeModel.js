@@ -17,7 +17,7 @@ const VoxelDog = () => {
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
       20 * Math.sin(0.2 * Math.PI),
-      10,
+      0,
       20 * Math.cos(0.2 * Math.PI)
     )
   )
@@ -78,8 +78,6 @@ const VoxelDog = () => {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
-        // Adjust the position of the model
-        model.position.y += 0.2; // Increase this value to raise the model higher
         animate()
         setLoading(false)
       })
